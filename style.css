@@ -1,0 +1,109 @@
+@font-face{
+	font-family: 'lobster';
+	src: url(fonts/lobster.ttf);
+}
+
+
+body{
+	/*min-width: 355px;*/
+	height: 100vh;
+	margin: 0;
+	background: url('https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663276482_15-mykaleidoscope-ru-p-novogodnii-fon-dlya-otkritki-krasivo-17.jpg') center center no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.lovecontainer{
+	font-size: 95px;
+	color: rgb(7,59,249);
+	/*color: rgb(220,21,243);*/
+	/*color: white;*/
+	font-weight: bold;
+	text-align: center;
+	font-style: italic;
+	margin-top: 3rem;
+}
+
+.lovetext{
+	font-family: 'lobster';
+	/*font-weight: bold;*/
+	transform: translateY(-35px);
+    text-shadow: 0 0 burlywood;
+    letter-spacing: 1px;
+    animation-name: color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+.loveimg img{
+	max-width: 400px;
+	font-size: 0;
+	animation-name: loveula;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes loveula{
+	0%{
+		transform: scale(1.0);
+	}
+
+	50%{
+		transform: scale(1.2);
+	}
+
+	100%{
+		transform: scale(1.0);
+	}
+}
+
+@keyframes color{
+	0%{
+		color: rgb(109,139,24);
+	}
+
+	50%{
+		color: rgb(208,37,102);
+	}
+
+	100%{
+		color: rgb(109,139,24);
+	}
+}
+
+
+@media(max-width: 730px){
+	.lovecontainer{
+		font-size: 50px;
+	}
+
+	.loveimg img{
+		max-width: 300px;
+	}
+}
+
+
+@media(max-width: 355px){
+	.lovecontainer{
+		font-size: 30px;
+	}
+
+	.loveimg img{
+		max-width: 200px;
+	}
+
+	.lovetext{
+		transform: translateY(-10px);
+	}
+}
+
+
+
+/*.loveimg{
+	transform: translateY(50px);
+}*/
